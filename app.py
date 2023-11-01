@@ -35,6 +35,7 @@ with st.container():
     income = col4.number_input('Income', min_value=20062, max_value=299909, format="%d")
     bmi = col4.number_input('BMI', min_value=18.002336577801902, max_value=39.99721081557256, format="%.2f")
     triglycerides = col4.number_input('Triglycerides', min_value=30, max_value=800, format="%d")
+    diet = col4.selectbox('Dieta', ['Unhealthy', 'Healthy'])
 
 with st.container():
     physical_activity_days_per_week = col5.number_input('Physical Activity Days Per Week', min_value=0, max_value=7, format="%d")
@@ -50,30 +51,31 @@ with st.container():
     if st.button('Predict'):
         data = pd.DataFrame(
             {
-                'patient_id': ['UWX3861'],
-                'sex': ['Male'],
-                'blood_pressure': ['90/61'],
-                'country': ['United Kingdom'],
-                'continent': ['Europe'],
-                'hemisphere': ['Northern Hemisphere'],
-                'age': [age],
-                'cholesterol': [cholesterol],
-                'heart_rate': [heart_rate],
-                'diabetes': [diabetes],
-                'family_history': [family_history],
-                'smoking': [smoking],
-                'obesity': [obesity],
-                'alcohol_consumption': [alcohol_consumption],
-                'exercise_hours_per_week': [exercise_hours_per_week],
-                'previous_heart_problems': [previous_heart_problems],
-                'medication_use': [medication_use],
-                'stress_level': [stress_level],
-                'sedentary_hours_per_day': [sedentary_hours_per_day],
-                'income': [income],
-                'bmi': [bmi],
-                'triglycerides': [triglycerides],
-                'physical_activity_days_per_week': [physical_activity_days_per_week],
-                'sleep_hours_per_day': [sleep_hours_per_day]
+                'Patient ID': ['UWX3861'],
+                'Sex': ['Male'],
+                'Blood Pressure': ['90/61'],
+                'Diet': [diet]
+                'Country': ['United Kingdom'],
+                'Continent': ['Europe'],
+                'Hemisphere': ['Northern Hemisphere'],
+                'Age': [age],
+                'Cholesterol': [cholesterol],
+                'Heart_rate': [heart_rate],
+                'Diabetes': [diabetes],
+                'Family History': [family_history],
+                'Smoking': [smoking],
+                'Obesity': [obesity],
+                'Alcohol Consumption': [alcohol_consumption],
+                'Exercise Hours Per Week': [exercise_hours_per_week],
+                'Previous Heart Problems': [previous_heart_problems],
+                'Medication Use': [medication_use],
+                'Stress Level': [stress_level],
+                'Sedentary Hours Per Day': [sedentary_hours_per_day],
+                'Income': [income],
+                'BMI': [bmi],
+                'Triglycerides': [triglycerides],
+                'Physical Activity Days Per Week': [physical_activity_days_per_week],
+                'Sleep Hours Per Day': [sleep_hours_per_day]
             }
         )
 
