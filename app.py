@@ -54,7 +54,7 @@ with st.container():
                 'Patient ID': ['UWX3861'],
                 'Sex': ['Male'],
                 'Blood Pressure': ['90/61'],
-                'Diet': [diet]
+                'Diet': [diet],
                 'Country': ['United Kingdom'],
                 'Continent': ['Europe'],
                 'Hemisphere': ['Northern Hemisphere'],
