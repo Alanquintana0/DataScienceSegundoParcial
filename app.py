@@ -60,7 +60,7 @@ with st.container():
                 'Hemisphere': ['Northern Hemisphere'],
                 'Age': [age],
                 'Cholesterol': [cholesterol],
-                'Heart_rate': [heart_rate],
+                'Heart Rate': [heart_rate],
                 'Diabetes': [diabetes],
                 'Family History': [family_history],
                 'Smoking': [smoking],
