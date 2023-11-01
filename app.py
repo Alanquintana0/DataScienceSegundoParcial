@@ -7,7 +7,7 @@ from combined_attributes_adder import CombinedAttributesAdder
 
 
 st.image("https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",width =50,use_column_width=3)
-st.header('House Prediction Data Science proyect')
+st.header('Random forest classificator')
 st.write('Data Science for predictions house value data')
 
 col1, col2, col3, col4, col5 = st.columns(5)
