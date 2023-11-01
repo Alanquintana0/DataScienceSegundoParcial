@@ -6,6 +6,7 @@ bmi_ix = heart_data_num.columns.get_loc('BMI')
 diabetes_ix = heart_data_num.columns.get_loc('Diabetes')
 tryglicerides_ix = heart_data_num.columns.get_loc('Triglycerides')
 print(cholesterol_ix, bmi_ix, diabetes_ix, tryglicerides_ix)
+cholesterol_ix, bmi_ix, diabetes_ix, tryglicerides_ix = 1, 14, 3, 15
 
 class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
   def __init__(self, add_cholesterol_and_tryg = True):
